@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(logRequest);
 app.use(limit);
-app.use('/', router);
+app.use('/api', router);
 app.use(logError);
 app.use(celebrateErrors());
 
